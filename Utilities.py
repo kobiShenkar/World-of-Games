@@ -1,4 +1,4 @@
-# this line is to create conflict
+# this line is to create conflict from master
 def is_valid_input(input_str):
     while True:
         try:
