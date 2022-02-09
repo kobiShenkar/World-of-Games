@@ -1,7 +1,8 @@
 import CurrencyRouletteGame
 import GuessGame
 import MemoryGame
-from Utilities import is_valid_range
+from Utils import is_valid_range
+from Score import add_score
 
 games = [{'id': 1,
           'name': MemoryGame,
@@ -21,7 +22,7 @@ def welcome(name):
 
 
 def load_game():
-    selected_game, difficulty = 0, 0
+    selected_game, difficulty, is_won = 0, 0, False
     print("Please choose a game to play:")
     for game in games:
         print(f"{game['text']}")
@@ -31,5 +32,7 @@ def load_game():
 
     for game in games:
         if selected_game == game['id']:
-            return game['name'].play(difficulty)
+            is_won = game['name'].play(difficulty)
 
+    if is_won:
+        add_score(difficulty)

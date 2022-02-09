@@ -1,7 +1,7 @@
 import random
 import sys
 import time
-from Utilities import is_valid_input
+from Utils import is_valid_input
 
 g_rand_numbers = []
 g_user_numbers = []

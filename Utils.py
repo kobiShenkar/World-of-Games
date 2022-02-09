@@ -1,4 +1,15 @@
-# this line is to create conflict from master
+import sys
+import time
+
+SCORES_FILE_NAME = "Scores.txt"
+BAD_RETURN_CODE = -1
+
+
+def Screen_cleaner():
+    time.sleep(0.7)
+    sys.stdout.write('\r' + "")
+
+
 def is_valid_input(input_str):
     while True:
         try:

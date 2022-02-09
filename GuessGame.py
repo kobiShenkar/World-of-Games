@@ -1,5 +1,5 @@
 import random
-from Utilities import is_valid_range
+from Utils import is_valid_range
 
 secret_number = 0
 g_difficulty = 0

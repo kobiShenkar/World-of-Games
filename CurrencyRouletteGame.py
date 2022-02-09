@@ -1,6 +1,6 @@
 import requests
 import random
-from Utilities import is_valid_input
+from Utils import is_valid_input
 
 API_KEY = '9043a5b0-732a-11ec-aa73-e596fc0f3f89'
 BASE_CURRENCY = 'USD'
